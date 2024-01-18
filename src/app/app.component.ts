@@ -36,6 +36,7 @@ export class AppComponent implements OnInit {
   snakePosition = [
     { x: this.gridSize / 2, y: this.gridSize / 2 },
     { x: this.gridSize / 2 + 1, y: this.gridSize / 2 },
+    { x: this.gridSize / 2 + 2, y: this.gridSize / 2 },
   ];
 
   direction: MoveDirection = 'ArrowDown';
