@@ -21,7 +21,8 @@ type MoveDirection = 'ArrowLeft' | 'ArrowRight' | 'ArrowUp' | 'ArrowDown';
           [foodPosition]="foodPosition"
           [snakePosition]="snakePosition"
           (onAteFood)="onAteFood()"
-        ></app-cell>
+        />
+        
       </div>
     </main>
   `,

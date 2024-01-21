@@ -12,6 +12,7 @@
 
 .snake_body {
     background-color: green;
+    position:absolute;
 }
 
 .snake_head {

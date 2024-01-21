@@ -16,25 +16,20 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div>
-      <div [ngSwitch]="cellStatus">
-        <div
-          *ngSwitchCase="'food'"
-          [ngClass]="{ cell: true, food: true }"
-        ></div>
+    <div [ngSwitch]="cellStatus">
+      <div *ngSwitchCase="'food'" [ngClass]="{ cell: true, food: true }"></div>
 
-        <div
-          *ngSwitchCase="'snake'"
-          [ngClass]="{ cell: true, snake_body: true }"
-        ></div>
+      <div
+        *ngSwitchCase="'snake'"
+        [ngClass]="{ cell: true, snake_body: true }"
+      ></div>
 
-        <div
-          *ngSwitchCase="'snake-head'"
-          [ngClass]="{ cell: true, snake_head: true }"
-        ></div>
+      <div
+        *ngSwitchCase="'snake-head'"
+        [ngClass]="{ cell: true, snake_head: true }"
+      ></div>
 
-        <div *ngSwitchDefault [ngClass]="{ cell: true }"></div>
-      </div>
+      <div *ngSwitchDefault [ngClass]="{ cell: true }"></div>
     </div>
   `,
   styleUrl: './cell.component.css',
